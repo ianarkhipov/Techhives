@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1000px) {
+    /* hide everything except ULs 1 and 2 */
+    body > *:not(.container), 
+    .top > *:not(.container__menu), 
+    .what-we-do > *:not(.container), 
+    .main-bottom,
+    footer > *:not(.container) {
+      display: none;
+    }
+    
+    /* display ULs 1 and 2 as a column */
+    .menu1, .menu2 {
+      display: block;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* adjust styles for UL 1 */
+    .menu1 li {
+      display: block;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    /* adjust styles for UL 2 */
+    .menu2 li {
+      display: block;
+      padding: 0.5rem 0;
+      border-top: 1px solid #ccc;
+    }
+    
+    /* increase font size for UL text */
+    .menu1 li div,
+    .menu2 li div {
+      font-size: 1.5rem;
+    }
+    
+    /* remove anchor tags from menu1 and menu2 */
+    .menu1 a.link, .menu2 a.link {
+      display: none;
+    }
+  }
+  
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    }
+
+.container__menu {
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+}
+.menu div {
+    font-weight: bold;
+  }
+  
+
+.header-box {
+    width: 1425px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.top {
+    height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+   
+}
+.what-we-do {
+    padding-top: 64px;
+}
+
+
+.menu1 {
+    width: 712.5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+    list-style-type: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.menu2 {
+    width: 712.5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 42px;
+    list-style-type: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.div{
+    position: absolute;
+width: 72px;
+height: 15px;
+left: 421px;
+top: 20px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+letter-spacing: -0.01em;
+
+color: #1D1A1E;
+}
+
+.link {
+    flex-grow: 0.01;
+}
+
+
+.H1-like {
+/* Raise money for YouTube Channel! */
+
+
+width: 690px;
+height: 54px;
+left: 139px;
+top: 83px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 54px;
+/* identical to box height */
+
+color: #1D1A1E;
+}
+.H2-like {
+width: 497px;
+height: 22px;
+left: 139px;
+top: 154px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 120%;
+/* identical to box height, or 22px */
+
+color: #1D1A1E;   
+}
+.header-block {
+    position: absolute;
+    width: 640px;
+    height: 93px;
+    left: 139px;
+    top: 83px;
+    padding-top: 115px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.text-below-H1 {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+    width: 425px;
+    margin-bottom: 71px;
+}
+
+.H2-contacts {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+
+}
+
+.H3-like {
+    font-size: 36px;
+    text-align: center;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.H4-like {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
+}
+
+.cardboard {
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-card {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68; 
+    width: 359px; 
+    padding: 44px 32px;
+    box-sizing: border-box;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    box-shadow: #FFFFFF;
+    
+    
+}
+.center-card {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68; 
+    width: 359px; 
+    border: 1px solid blueviolet;
+}
+.right-card {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68; 
+    width: 359px; 
+    border: 1px solid blueviolet;
+}
+
+.card__link {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+
+}
+
+.footer-top-board {
+    width: 495px;
+}
+
+.footer-top-left-block {
+    width: 340px;
+}
+
+.footer-bottom-board {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.phone {
+    border: 1px solid blueviolet;
+}
+
+.mail {
+    border: 1px solid blueviolet;
+}
+
+.text-input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.top_button {
+    font-size: 16px;
+    Line-height: 26px;
+    text-align: Center;
+    Letter-spacing: 0.04cm;
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    padding: 15px 50px;
+    text-decoration: none;
+    margin-top: 71px;
+}
+
+.submit_button {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.body-block {
+    border: 1px solid blue;
+}
+
+.contacts-cardboard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.left-side {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68; 
+    width: 500px; 
+    border: 1px solid blueviolet; 
+    overflow: hidden;  
+}
+
+.right-side {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68; 
+    width: 500px; 
+    border: 1px solid blueviolet;   
+}
+
+.map-board {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 1140px;
+}
+
