@@ -23,7 +23,8 @@
 }
 
 .header {
-    padding: 40px 0;
+    padding-top: 8px;
+    padding-bottom: 35.54px;
 }
 
 .header .container {
@@ -59,8 +60,10 @@
 .container_menu {
     position: static;
     width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 .container__menu {
@@ -100,6 +103,7 @@
     justify-content: center;
     align-items: center;
     margin-left: AUTO;
+    cursor: pointer;
 }
 
 .menu1 {
@@ -109,7 +113,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 42px;
+    /*padding-top: 42px;*/
     list-style-type: none;
     margin-left: 15px;
     margin-right: 15px;
@@ -121,7 +125,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 42px;
+    /*padding-top: 42px;*/
     list-style-type: none;
     margin-left: 15px;
     margin-right: 15px;
