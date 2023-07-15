@@ -44,3 +44,21 @@
 
     </div>
 </section>
+
+<!--scroll for header menu-->
+<script>
+    window.addEventListener('scroll', function () {
+        var header = document.querySelector('header');
+        var container__menu =document.querySelector('.container__menu');
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrolltop > 0) {
+            header.classList.add('scrolled');
+        } else {
+               header.classList.remove('scrolled');
+                container__menu.classList.remove('scrolled');
+            }
+        })
+</script>
+
+</body>
