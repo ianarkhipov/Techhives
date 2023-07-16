@@ -43,31 +43,38 @@
     <div class="timeline">
     </div>
 
+    <div class="above-graphic">
+        <div class="million">1M</div>
+        <img src="./img/Hue.svg" alt="Hue" class="Hue">
+    </div>
+
     <div class="graphic-wrapper">
-    <img src="./img/XY-graphic.svg" alt="XY Graphic">
-    <div class="clickable-point" style="top: 100px; left: 200px;">
-        <label>Label 1</label>
+        <div class="views">VIEWS</div>
+        <img src="./img/XY-graphic.svg" alt="XY Graphic">
+        <div class="clickable-point">
+            <label>Label 1</label>
+        </div>
+        <div class="clickable-point">
+            <label>Label 2</label>
+        </div>
+        <div class="want-too"><img src="./img/button-2.svg" alt="want-too"></div>
     </div>
-    <div class="clickable-point" style="top: 150px; left: 300px;">
-        <label>Label 2</label>
-    </div>
-    </div>
+    <div class="straw"><img src="./img/icons%201.svg" alt="straw"></div>
 </section>
+</body>
 
 <!--scroll for header menu-->
 <script>
     window.addEventListener('scroll', function () {
         var header = document.querySelector('header');
-        var container__menu =document.querySelector('.container__menu');
+        var container__menu = document.querySelector('.container__menu');
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrolltop > 0) {
             header.classList.add('scrolled');
         } else {
-               header.classList.remove('scrolled');
-                container__menu.classList.remove('scrolled');
-            }
-        })
+            header.classList.remove('scrolled');
+            container__menu.classList.remove('scrolled');
+        }
+    })
 </script>
-
-</body>

@@ -7,6 +7,7 @@
     font-family: 'Proxima Nova', sans-serif;
     src: url("Fonts/Proxima-Nova-Regular.otf");
 }
+
 .body {
     font-family: "Proxima Nova", sans-serif;
     color: #1D1A1E;
@@ -121,6 +122,7 @@
     margin-left: 15px;
     margin-right: 15px;
 }
+
 .menu2 {
     width: 712.5px;
     display: flex;
@@ -162,17 +164,91 @@
     border: 1px solid black;
     white-space: nowrap;
 }
+
 @media (max-width: 450px) {
-    flex-direction: column; /* Stacks the text vertically */
-    white-space: normal; /* Allows text to wrap */
+    flex-direction: column
+
+; /* Stacks the text vertically */
+    white-space: normal
+
+; /* Allows text to wrap */
+}
+
+.above-graphic {
+    height: 86px;
+    width: 724px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    align-items: flex-end;
+    position: relative;
+}
+
+.million {
+    border: 1px solid black;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 482px;
+    margin-bottom: 2.68px;
+    position: relative;
+    width: 23px;
+    height: 22px;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.92px;
+    letter-spacing: -0.01em;
+}
+
+.Hue {
+    position: absolute;
+    /*size: initial;*/
+    top: 0px;
+    right: 0px;
+
 }
 
 .graphic-wrapper {
-    width: 620px;
-    height: 256.65px;
+    width: fit-content;
+    height: fit-content;
     position: relative;
     margin: 0 auto;
+    border: 1px solid black;
+
+}
+
+.views {
+    width: 49px;
+    height: 19px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    position: absolute;
+    top: 164.32px;
+    right: 603px;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.49px;
+    transform-origin: left top;
+    letter-spacing: -0.01em;
 }
 
 
+.want-too {
+    position: absolute;
+    top: 238.32px;
+    left: 394px;
+}
 
+.clickable-point {
+    position: absolute;
+}
+
+
+.straw {
+    width: fit-content;
+    height: fit-content;
+    margin: 9.35px auto 0;
+
+}
