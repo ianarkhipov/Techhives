@@ -24,9 +24,26 @@
 }
 
 .header {
+    position: sticky;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    background: rgba(255, 255, 255, 0.90);
+
     /*padding-top: 8px;*/
     /*padding-bottom: 35.54px;*/
 }
+
+/*.header::after {*/
+/*    background: white;*/
+/*    opacity: 50%;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*position: absolute;*/
+/*}*/
 
 .header .container {
     display: flex;
@@ -156,6 +173,7 @@
     max-width: 100%; /* Prevents the div from exceeding the window width */
     min-width: 450px; /* Minimum width of 450px */
     margin: 0 auto;
+    padding-top: 83px;
     padding-right: 52px;
     display: flex;
     justify-content: left;
@@ -167,11 +185,9 @@
 
 @media (max-width: 450px) {
     flex-direction: column
-
-; /* Stacks the text vertically */
     white-space: normal
 
-; /* Allows text to wrap */
+
 }
 
 .above-graphic {
