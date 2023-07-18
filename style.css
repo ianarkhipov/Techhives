@@ -201,6 +201,13 @@
     position: relative;
 }
 
+.hueContainer {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
 .million {
     border: 1px solid black;
     display: flex;
