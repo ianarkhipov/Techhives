@@ -22,8 +22,8 @@ function updateImagePosition(event) {
     const deltaY = mouseY - prevMouseY;
 
     // Apply momentum by adding the movement from the previous update
-    const imageX = (containerRect.width / 2500 - mouseX + deltaX) * sensitivityFactor;
-    const imageY = (containerRect.height / 2500 - mouseY + deltaY) * sensitivityFactor;
+    const imageX = (containerRect.width / 2 - mouseX + deltaX) * sensitivityFactor;
+    const imageY = (containerRect.height / 2 - mouseY + deltaY) * sensitivityFactor;
 
     // Update the position of the image using CSS translate
     runningImage.style.transform = `translate(${imageX * translationFactor}px, ${imageY * translationFactor}px)`;
